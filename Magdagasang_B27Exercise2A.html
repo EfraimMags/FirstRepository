@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Exercise 2A Tables</title>
+        <meta charset="UTF-8">
+
+        <style>
+            body{
+                
+                
+                background-color: #eeeeee; 
+            }
+
+            table.tableA{
+               margin: auto;
+               height: 90%;
+               width: 90%;
+               border-collapse: collapse;
+               margin-top: 1px;
+               background-color: #D6D6D7; 
+               border-radius: 1px;
+               
+            }
+            
+            th, td{
+
+                border-bottom: 1px solid rgb(204, 204, 204); 
+                padding: 5px;
+                margin:0px;
+                padding-top: 10px;
+                                 
+            }
+    
+            input{
+                padding: 10px;
+                margin: 1px 3px 0px;
+                border-style: none;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 10px;
+               
+            }
+            a{
+                text-decoration: none;
+            }
+            h1{
+               
+                padding: 0px;
+                padding-top: 10px;
+                margin: 0px;
+            }
+
+            input.searchbar{
+
+                margin-top: 5px;
+                margin-bottom: 5px;
+                width: 100%;
+                height: 35px;
+                text-align: center;
+                
+               
+            }
+            
+            .btnA:hover, .btnB:hover, .btnC:hover, .btn-srch:hover, .btn-filter:hover{
+               
+                box-shadow: 0px 3px rgb(134, 133, 133);
+                padding: 11px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 2px;
+            }
+
+            .tableB th, .tableB td{
+                border-bottom: 0px; 
+            
+            }
+
+           .tableRowA:hover{
+                background-color:#e7e7e7;
+                border-bottom: 2px solid rgb(134, 133, 133);
+                border-radius: 5px;
+            
+            }
+          
+            header{
+               margin: auto;
+               height: 120px;
+               width: 90%;
+               
+            }
+            .tableRowTitle{
+                margin: auto;
+                padding: 10px;
+            }
+            .btn-srch{
+                width: 10%;
+                
+            }
+            .btn-srch, .btn-filter{
+                background-color: rgb(204, 204, 204);
+            }
+
+            .tableFilter{
+                margin: auto;
+                width: 50%;
+                height: 70px;
+                border-collapse: collapse;
+                border-bottom: 0px;
+                padding: 0;
+               
+               
+            }
+
+            .btn-srch {
+                width: 100%;
+                color: #ce181e;
+            }
+
+            
+            
+            .tableFilter td{
+                border-bottom: 0px;
+                
+            }
+          
+            .btn-srch:hover, .checkout:hover{
+                background-color: #ce181e ;
+                color:#eeeeee;
+            }
+
+            
+           
+
+           
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 >Books To Look.com</h1>
+
+            <input title="type book titles" class="searchbar" type="search" placeholder="search you quirkless muggle!">
+            <input class= "btn-srch src" type="button" value="Search">
+          
+        </header>
+        <table class="tableFilter">
+            <tr >
+               
+                <td>
+
+                    <b>Year Published: 
+                    
+                    <select name="year" id="year">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                    </select>
+                </td>   
+                <td>
+                    <b>Author : 
+                    
+                    <select name="year" id="year">
+                        <option value="J.K. Rowling">J.K. Rowling</option>
+                        <option value="Saitama">Saitama</option>
+                        <option value="Deku">Deku</option>
+                        <option value="Itadori Yuji">Itadori Yuji</option>
+                    </select>
+                </td>
+                <td align="left">
+                  <input class="btn-filter" type="button" value="filter">
+                </td>
+                
+                   
+            </tr>
+        </table>
+
+
+          <table class="tableA">
+            <tr>
+                <th colspan="4"><h1 class="tableRowTitle">Books of the Wizzarding World</h1></th>
+            </tr>
+            <tr>
+                <th>Book title</th>
+                <th>Author</th>
+                <th>Year Published</th>
+                <th>Actions</th>
+            </tr>
+            <tr class = "tableRowA" align="center">
+                <td><h4>Fantastic Beasts 1</h4></td>
+                <td>J.K. Rowling</td>
+                <td> 2017 </td>
+                <td>
+                   <table class="tableB">
+                        <tr>
+                            <td><a href=""> <input class="btnA" type="button" value="Add to Cart"> </a></td>
+                            <td><a href=""> <input class="btnB" type="button" value="Add to Wishlist"> </a></td>
+                            <td ><a href="./Magdagasang_B27Exercise2B.html"> <input class="btnC checkout" type="button" value="Checkout"> </a></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>           
+            <tr class = "tableRowA" align="center">
+                <td><h4>Fantastic Beasts 2</h4></td>
+                <td>J.K. Rowling</td>
+                <td> 2018</td>
+                <td>
+                   <table class="tableB">
+                        <tr>
+                            <td><a href=""> <input class="btnA" type="button" value="Add to Cart"> </a></td>
+                            <td><a href=""> <input class="btnB" type="button" value="Add to Wishlist"> </a></td>
+                            <td><a href="./Magdagasang_B27Exercise2B.html"> <input class="btnC checkout" type="button" value="Checkout"> </a></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>  
+            <tr class = "tableRowA" align="center">
+                <td><h4>Fantastic Beasts 3</h4></td>
+                <td>J.K. Rowling</td>
+                <td> 2019</td>
+                <td>
+                   <table class="tableB">
+                        <tr>
+                            <td><a href=""> <input class="btnA" type="button" value="Add to Cart"> </a></td>
+                            <td><a href=""> <input class="btnB" type="button" value="Add to Wishlist"> </a></td>
+                            <td><a href="./Magdagasang_B27Exercise2B.html"> <input class="btnC checkout" type="button" value="Checkout"> </a></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>  
+            <tr class = "tableRowA" align="center">
+                <td><h4>Harry Potter and the 7 dwarfs</h4></td>
+                <td>J.K. Rowling in The Mid</td>
+                <td> 2018</td>
+                <td>
+                   <table class="tableB">
+                        <tr>
+                            <td><a href=""> <input class="btnA" type="button" value="Add to Cart"> </a></td>
+                            <td><a href=""> <input class="btnB" type="button" value="Add to Wishlist"> </a></td>
+                            <td><a href="./Magdagasang_B27Exercise2B.html"> <input class="btnC checkout" type="button" value="Checkout"> </a></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>  
+            <tr class = "tableRowA" align="center">
+                <td><h4>kimetsu no Harry </h4></td>
+                <td>Deku Kabalo</td>
+                <td> 2015</td>
+                <td>
+                   <table class="tableB">
+                        <tr>
+                            <td><a href=""> <input class="btnA" type="button" value="Add to Cart"> </a></td>
+                            <td><a href=""> <input class="btnB" type="button" value="Add to Wishlist"> </a></td>
+                            <td><a href="./Magdagasang_B27Exercise2B.html"> <input class="btnC checkout" type="button" value="Checkout"> </a></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>  
+            <tr class = "tableRowA" align="center">
+                <td><h4>kimetsu no Harry Poty II</h4></td>
+                <td>Deku Kabalo</td>
+                <td> 2016</td>
+                <td>
+                   <table class="tableB">
+                        <tr>
+                            <td><a href=""> <input class="btnA" type="button" value="Add to Cart"> </a></td>
+                            <td><a href=""> <input class="btnB" type="button" value="Add to Wishlist"> </a></td>
+                            <td><a href="./Magdagasang_B27Exercise2B.html"> <input class="btnC checkout" type="button" value="Checkout"> </a></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>  
+            <tr class = "tableRowA" align="center">
+                <td><h4>Ding The Witch Hunter </h4></td>
+                <td>Caloocan Boy</td>
+                <td> 2016</td>
+                <td>
+                   <table class="tableB">
+                        <tr>
+                            <td><a href=""> <input class="btnA" type="button" value="Add to Cart"> </a></td>
+                            <td><a href=""> <input class="btnB" type="button" value="Add to Wishlist"> </a></td>
+                            <td><a href="./Magdagasang_B27Exercise2B.html"> <input class="btnC checkout" type="button" value="Checkout"> </a></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>  
+            <tr class = "tableRowA" align="center">
+                <td><h4>Jujutsu no Pare Mahal mo raw ako</h4></td>
+                <td>Caloocan Boy</td>
+                <td> 2015</td>
+                <td>
+                   <table class="tableB">
+                        <tr>
+                            <td><a href=""> <input class="btnA" type="button" value="Add to Cart"> </a></td>
+                            <td><a href=""> <input class="btnB" type="button" value="Add to Wishlist"> </a></td>
+                            <td><a href="./Magdagasang_B27Exercise2B.html"> <input class="btnC checkout" type="button" value="Checkout"> </a></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>  
+            <tr class = "tableRowA" align="center">
+                <td><h4>D amazing Spider Boy</h4></td>
+                <td>Ed Caluag</td>
+                <td> 2013</td>
+                <td>
+                   <table class="tableB">
+                        <tr>
+                            <td><a href=""> <input class="btnA" type="button" value="Add to Cart"> </a></td>
+                            <td><a href=""> <input class="btnB" type="button" value="Add to Wishlist"> </a></td>
+                            <td><a href="./Magdagasang_B27Exercise2B.html"> <input class="btnC checkout" type="button" value="Checkout"> </a></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>  
+            <tr class = "tableRowA" align="center">
+                <td><h4>Lastikman ang Huling El Bimbo</h4></td>
+                <td>Deku Ganahan</td>
+                <td> 2013</td>
+                <td>
+                   <table class="tableB">
+                        <tr>
+                            <td><a href=""> <input class="btnA" type="button" value="Add to Cart"> </a></td>
+                            <td><a href=""> <input class="btnB" type="button" value="Add to Wishlist"> </a></td>
+                            <td><a href="./Magdagasang_B27Exercise2B.html"> <input class="btnC checkout" type="button" value="Checkout"> </a></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>  
+           
+           
+            
+        </table>
+
+    </body>
+</html>

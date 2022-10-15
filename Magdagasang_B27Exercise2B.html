@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> Exercise 2B Order Form</title>
+        <meta charset="UTF-8">
+
+        <style>
+            body{
+              
+                color:#1F1D20;
+                background-color: #eeeeee; 
+            }
+            h1{
+                text-align: center;
+                margin: auto;
+                padding: 50px;
+                margin-top: 50px;
+                margin-bottom: 10px;
+                padding-bottom: 5px;
+            }
+       
+            table, td{
+                
+                margin: 2px;
+                border-collapse: collapse;
+                padding: 2px;
+                
+            }
+
+          
+            input{
+                border: none;
+                padding: 9px;
+                border-radius: 5px;
+             
+                
+            }
+            input:hover{
+                box-shadow: 0px 3px  rgb(134, 133, 133);
+            }
+          
+            h4{
+                margin: 0px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            .container{
+                position: relative;
+                margin: auto;
+                width: 700px;
+                height: 450px;
+                background-color: #D6D6D7;
+                border-radius: 20px;
+                margin-top: 50px;
+                box-shadow: 0px 3px rgb(134, 133, 133);
+            }
+     
+            .table1{
+                position: absolute;
+                left: 4%;
+                bottom: 15%;
+                
+            }
+
+
+            .table2{
+            position: absolute;
+            left: 105%;
+            top: 29%;
+            width: 100%;
+            
+            }
+
+            .price{
+              width: 60px;
+              padding-left: 20px;
+              padding-right: 10px;
+            }
+
+            .table2 table tr td h4, .table2 table tr td h5{
+             margin:0px;
+            }
+            .total h2{
+                margin: 0%;
+                padding: 30px;
+            }
+            .email, .creditCard{
+                width: 95%;
+            }
+            .date{
+                width: 90%;
+            }
+            .btn{
+                width: 90%;
+            }
+            
+            .btn:hover{
+                box-shadow: 0px 3px rgb(134, 133, 133);
+                padding: 11px;
+                padding-left: 20px;
+                padding-right: 20px;
+                background-color: #ce181e ;
+                color:#eeeeee;
+              
+                
+            }
+         
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="table1">
+                <h1>Welcome Muggle!</h1>
+
+                <table>
+                    <tr>
+                        <td colspan="2"><h4>Personal Information</h4></td>
+                        
+                    </tr>
+                    <tr class="tddes borderBottom">
+                        <td class="tddes borderBottom"><input type = "text" placeholder="First name" required ></td>
+                        <td class="tddes borderBottom"><input type = "text" placeholder="Last name" required></td>
+                    </tr>
+                    <tr >
+                        <td colspan="2"><input class="email" type = "email" placeholder="Email" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type = "text" placeholder="Country" required></td></td>
+                        <td><input type = "text" placeholder="Postal Code" required></td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h4>Payment Details</h4></td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input class="creditCard"type = "text" placeholder="Credit Card" required></td>
+                        
+                    </tr>
+  
+                    <tr>
+                        <td><input type = "password" placeholder="Security Code" required></td>
+                        <td><input class="date" type = "date" placeholder="Date" required></td>
+                    </tr>
+
+                </div>
+                
+                </table>
+                <div class="table2">
+                <table >
+                    <tr>
+                        <td class="order" colspan="2"> <h3> Your Order:</h3></td>
+                    </tr>
+                    <tr>
+                        <td > Fantastic Beast </td>
+                        <td align="right" class="price"> $ 100.00</td>
+                    </tr>
+                    <tr>
+                        <td > Kimetsu no Harry Poty</td>
+                        <td align="right" class="price"> $ 50.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <br> </td>
+                    </tr>
+                    <tr>
+                        <td > <h4>Total Purchases</h4></td>
+                        <td align="right" class="price"> $ 150.00</td>
+                    </tr>
+                    <tr>
+                        <td > <h5>Estimated Tax</h5></td>
+                        <td align="right" class="price"> $0.00</td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="total"><h2>Total</h2></td>
+                        <td align="right" class="price"> $150.00</td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"> <input class="btn" type="button" value="Complete Purchase"></td> 
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+
+
+
+    </body>
+</html>
